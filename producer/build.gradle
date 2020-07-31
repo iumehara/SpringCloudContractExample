@@ -11,10 +11,12 @@ plugins {
 	id 'org.springframework.boot' version '2.3.2.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'maven-publish'
 }
 
 apply plugin: 'spring-cloud-contract'
 
+group = "io.umehara"
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -43,9 +45,9 @@ dependencyManagement {
 }
 
 contracts {
-	packageWithBaseClasses = 'hello'
+	packageWithBaseClasses = 'io.umehara.producer'
 	baseClassMappings {
-		baseClassMapping("hello", "hello.BaseClass")
+		baseClassMapping("io.umehara.producer", "io.umehara.producer.BaseClass")
 	}
 }
 

@@ -1,4 +1,4 @@
-package hello;
+package io.umehara.producer;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package hello;
+package io.umehara.producer;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;

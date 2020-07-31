@@ -1,4 +1,4 @@
-package hello
+package io.umehara.producer
 
 import org.springframework.cloud.contract.spec.Contract
 
